@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">GO-SAGI</string>
+    <string name="title_activity_main">GO-SAGI</string>
+    <string name="package_name">com.sppgkaj.mbg</string>
+    <string name="custom_url_scheme">com.sppgkaj.mbg</string>
+</resources>

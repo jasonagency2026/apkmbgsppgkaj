@@ -1,0 +1,9 @@
+{
+  "appId": "com.sppgkaj.mbg",
+  "appName": "GO-SAGI",
+  "webDir": "www",
+  "server": {
+    "url": "https://mbg.sppgkaj.com",
+    "cleartext": true
+  }
+}
