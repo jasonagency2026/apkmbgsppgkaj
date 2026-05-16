@@ -31,16 +31,17 @@ jobs:
       - name: Create Web Assets
         run: |
           mkdir -p www
-          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=https://mbg.sppgkaj.com"></head><body>Redirecting...</body></html>' > www/index.html
+          echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="refresh" content="0; url=https://mbg.sppgkaj.com"></head><body>Redirecting to MBG SPPG KAJ...</body></html>' > www/index.html
 
       - name: Capacitor Sync
-        run: npx cap sync
+        run: |
+          npx cap sync android
 
       - name: Build with Gradle
         run: |
           cd android
           chmod +x gradlew
-          ./gradlew assembleDebug
+          ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
