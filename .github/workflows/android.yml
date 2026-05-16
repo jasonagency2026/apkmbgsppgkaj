@@ -28,6 +28,11 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Create Web Assets
+        run: |
+          mkdir -p www
+          echo '<!DOCTYPE html><html><head><meta http-equiv="refresh" content="0; url=https://mbg.sppgkaj.com"></head><body>Redirecting...</body></html>' > www/index.html
+
       - name: Capacitor Sync
         run: npx cap sync
 
