@@ -28,12 +28,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Build Web
-        run: mkdir -p www && echo "<html><body><script>window.location.href='https://mbg.sppgkaj.com';</script></body></html>" > www/index.html
-
-      - name: Capacitor Add Android
-        run: npx cap add android
-
       - name: Capacitor Sync
         run: npx cap sync
 
